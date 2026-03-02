@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+<title>Placement Prep Starter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>🚀 Roadmap</h2>
+    <button class="week-btn" onclick="loadWeek(1,this)">Week 1</button>
+    <button class="week-btn" onclick="loadWeek(2,this)">Week 2</button>
+    <button class="week-btn" onclick="loadWeek(3,this)">Week 3</button>
+    <button class="week-btn" onclick="loadWeek(4,this)">Week 4</button>
+    <button class="week-btn" onclick="loadWeek(5,this)">Week 5</button>
+    <button class="week-btn" onclick="loadWeek(6,this)">Week 6</button>
+    <button class="week-btn" onclick="loadWeek(7,this)">Week 7</button>
+    <button class="week-btn" onclick="loadWeek(8,this)">Week 8</button>
+</div>
+
+<div class="main">
+<div class="card">
+
+<h1>Placement Prep Starter</h1>
+
+<div class="username-box">
+    Enter Name:
+    <input type="text" id="username" placeholder="Your Name">
+    <button onclick="saveName()">Save</button>
+</div>
+
+<h3 id="welcomeMsg"></h3>
+
+<div class="section-title">📌 Weekly Tasks</div>
+<div id="tasks"></div>
+
+<div class="section-title">📚 Resources</div>
+<div id="resources"></div>
+
+<div class="section-title">📊 Weekly Progress</div>
+<div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+</div>
+<div class="percentage" id="percentText">0% Completed</div>
+
+<div class="section-title">🏆 Overall 8-Week Progress</div>
+<div class="progress-container">
+    <div class="progress-bar" id="overallBar"></div>
+</div>
+<div class="percentage" id="overallText">0% Completed</div>
+
+</div>
+</div>
+
+<div class="modal" id="certificateModal">
+<div class="modal-content">
+    <h2>🎉 Congratulations!</h2>
+    <p id="certificateText"></p>
+    <button onclick="closeModal()">Close</button>
+</div>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
